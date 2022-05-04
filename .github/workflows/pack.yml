@@ -72,7 +72,7 @@ jobs:
             type=semver,pattern={{version}}
       - name: Installing deps
         run: npm ci
-      - name: Build Core FE-- Sentry Release
+      - name: Build Core FE
         run: npm run build
       - name: Login to GHCR registry
         if: github.event_name != 'pull_request'
